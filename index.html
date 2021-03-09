@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <style>
+        html {
+            overflow: -moz-hidden-unscrollable; 
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: calc(100vw + 18px); /*瀏覽器滾動條的長度大約是 18px*/
+            overflow: auto;
+        }
+    </style>
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | BadmintonTest</title>
@@ -17,10 +30,10 @@
 <body>
 
     <div class="webgl-content">
-        <div id="unityContainer" style="width: 1024px; height: 768px"></div>
+        <div id="unityContainer" style="width: 1920px; height: 1080px"></div>
         <div class="footer">
             <!--<div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>-
             <div class="title">BadmintonTest</div>-->
         </div>
     </div>
